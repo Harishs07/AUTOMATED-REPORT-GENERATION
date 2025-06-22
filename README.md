@@ -25,3 +25,7 @@ Once the analysis is complete, the fpdf library is used to format and create a c
 This automated system greatly reduces the workload for analysts, HR departments, team leaders, and even students who need to prepare structured reports from data. It demonstrates core programming concepts such as file I/O, data grouping and aggregation, error handling, type checking, and object-oriented design (using classes for the PDF report layout).
 
 In terms of extensibility, the project can be expanded in multiple directions. For instance, you could integrate data visualizations using matplotlib or seaborn to embed charts directly into the PDF. You could also allow the user to select the input file dynamically or schedule the script to run at specific intervals using task schedulers or cron jobs. Additionally, the project can be connected to databases for real-time data fetching or email servers to automatically send the generated report to stakeholders.
+
+"OUTPUT" : 
+
+[report.pdf](https://github.com/user-attachments/files/20851608/report.pdf)
