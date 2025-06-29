@@ -1,14 +1,14 @@
 import pandas as pd
 from fpdf import FPDF
 
-# Step 1: Load data from CSV
+
 df = pd.read_csv("data.csv")
 
-# Step 2: Analyze the data
+
 summary = df.groupby("Department")["Score"].agg(["mean", "max", "min", "count"]).reset_index()
 summary.columns = ["Department", "Average Score", "Max Score", "Min Score", "Count"]
 
-# Step 3: Create a PDF class
+
 class PDFReport(FPDF):
     def header(self):
         self.set_font("Arial", "B", 16)
@@ -42,7 +42,7 @@ class PDFReport(FPDF):
                 self.cell(col_width, row_height, text, border=1)
             self.ln()
 
-# Step 4: Create and save the PDF
+
 pdf = PDFReport()
 pdf.add_page()
 pdf.set_font("Arial", "", 12)
